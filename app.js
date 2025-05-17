@@ -1,17 +1,18 @@
+"use strict";
 // PRIMITIVE DATA TYPES
 // 1. number: Represents numeric values (integers and floating-point numbers)
-var ag = 25;
-var price = 99.99;
+let ag = 25;
+let price = 99.99;
 console.log("Number Example:", ag, price);
 // 2. string: Represents textual data
-var nam = "Tushar";
-var greeting = "Hello, ".concat(nam, "!");
+let nam = "Tushar";
+let greeting = `Hello, ${nam}!`;
 console.log("String Example:", greeting);
 // 3. null: Represents the intentional absence of any value
-var emptyValue = null;
+let emptyValue = null;
 console.log("Null Example:", emptyValue);
 // 4. undefined: Represents a variable that has been declared but not assigned a value
-var notAssigned;
+let notAssigned;
 console.log("Undefined Example:", notAssigned);
 // 5. bigint: Represents large integers beyond the safe range of the number type
 // let bigNumber: bigint = 123456789012345678901234567890n;
@@ -21,13 +22,13 @@ console.log("Undefined Example:", notAssigned);
 // console.log("Symbol Example:", uniqueKey);
 // NON-PRIMITIVE DATA TYPES
 // 1. object: Represents a collection of key-value pairs
-var person = { name: "Tushar", age: 25 };
+let person = { name: "Tushar", age: 25 };
 console.log("Object Example:", person);
 // 2. array: Represents a list of values
-var numbe = [1, 2, 3, 4, 5];
+let numbe = [1, 2, 3, 4, 5];
 console.log("Array Example:", numbe);
 // 3. tuple: Represents an array with fixed types and length
-var tupleExample = ["Tushar", 25];
+let tupleExample = ["Tushar", 25];
 console.log("Tuple Example:", tupleExample);
 // 4. enum: Represents a set of named constants
 var Color;
@@ -36,10 +37,10 @@ var Color;
     Color[Color["Green"] = 1] = "Green";
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
-var favoriteColor = Color.Green;
+let favoriteColor = Color.Green;
 console.log("Enum Example:", favoriteColor);
 // 5. function: Represents a block of reusable code
-var add = function (a, b) { return a + b; };
+let add = (a, b) => a + b;
 console.log("Function Example (Addition):", add(5, 10));
 // Function that always throws an error
 function throwError(message) {
@@ -53,7 +54,7 @@ function getArea(shape) {
             return 4 * 4; // Example for a square
         default:
             // This ensures all cases are handled
-            var _exhaustiveCheck = shape;
-            throw new Error("Unhandled shape: ".concat(_exhaustiveCheck));
+            const _exhaustiveCheck = shape;
+            throw new Error(`Unhandled shape: ${_exhaustiveCheck}`);
     }
 }
