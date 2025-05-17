@@ -1,3 +1,4 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var oddNumbers = numbers.filter(function (num) { return num % 2 !== 0; });
+"use strict";
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let oddNumber = numbers.filter((num) => num % 2 !== 0);
 console.log(oddNumbers);

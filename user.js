@@ -1,5 +1,6 @@
-(function () {
-    var a = 20;
-    var n = "Tushar";
+"use strict";
+(() => {
+    let a = 20;
+    let n = "Tushar";
     console.log("Hello " + n + " " + a);
 })();
