@@ -1,0 +1,12 @@
+var octa = "0o10";
+var hex = "0x10";
+var binary = "0b10";
+var decimal = 10;
+var octaNum = parseInt(octa, 8);
+var hexNum = parseInt(hex, 16);
+var binaryNum = parseInt(binary, 2);
+var decimalNum = parseInt(decimal.toString(), 10);
+console.log("Octal: " + octaNum);
+console.log("Hexadecimal: " + hexNum);
+console.log("Binary: " + binaryNum);
+console.log("Decimal: " + decimalNum);

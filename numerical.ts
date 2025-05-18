@@ -1,0 +1,12 @@
+let octa:number = 0o10;
+let hex = "0x100";
+let binary = "0b101";
+let decimal = 10;
+let octaNum = parseInt(octa.toString(), 8);
+let hexNum = parseInt(hex, 16);
+let binaryNum = parseInt(binary, 2);
+let decimalNum = parseInt(decimal.toString(), 10);
+console.log("Octal: " + octaNum);
+console.log("Hexadecimal: " + hexNum);
+console.log("Binary: " + binaryNum);
+console.log("Decimal: " + decimalNum);
